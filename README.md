@@ -2,9 +2,11 @@
 
 **막연한 한마디를 gpt-image-2 완성 프롬프트로 컴파일하는 Claude Code 스킬.**
 
+![공냥 프롬프트 킷 — 거친 요청을 완성 프롬프트로 컴파일](docs/hero.gif)
+
 "포스터 하나 만들어줘" 같은 거친 한마디를, 바로 생성에 넣을 수 있는 완성 한국어 프로덕션 프롬프트로 바꾼다. 1,000장 규모 라이브러리·화보·포스터·만화를 뽑으며 다듬은 규칙을 한 스킬로 묶었다.
 
-> 데모: **https://kimsh-1.github.io/gongnyang-prompt-kit**
+> 인터랙티브 데모: **[kimsh-1.github.io/gongnyang-prompt-kit](https://kimsh-1.github.io/gongnyang-prompt-kit)**
 
 ---
 
