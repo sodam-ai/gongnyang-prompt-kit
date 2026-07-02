@@ -322,27 +322,6 @@ AR 4:5
 
 </details>
 
-#### `미니멀 텀블러` → L3 미니멀 프로덕트
-
-| 스킬 없이 | 킷 컴파일 |
-|---|---|
-| ![스킬 없이 — 미니멀 텀블러](docs/showcase/SC15B.webp) | ![킷 컴파일 — L3 미니멀 프로덕트](docs/showcase/SC15.webp) |
-
-<details>
-<summary>컴파일 프롬프트 전문</summary>
-
-```
-스테인리스 텀블러 제품 히어로.
-Scene: product hero on a seamless white stage #FAFAFA, perfectly clean single-subject composition, 세이지 그린 무광 텀블러 하나가 정중앙에 수직으로.
-Camera: 정면 눈높이, 제품이 프레임 하단 2/3를 차지.
-Lighting: soft top-light with one crisp contact shadow anchoring the object, polished surface reflections kept subtle.
-Color grading: 화이트 #FAFAFA, 세이지 #9DB4A0, 잉크 #111111.
-Texture/Medium: true-to-material 무광 파우더코팅 질감, 매끈한 금속 림.
-AR 1:1
-```
-
-</details>
-
 #### `대시보드 히어로` → L5 다크 테크
 
 | 스킬 없이 | 킷 컴파일 |
@@ -414,19 +393,19 @@ AR 4:5
 
 | 스킬 없이 | 킷 컴파일 |
 |---|---|
-| ![스킬 없이 — 야시장 타이포그래피 포스터, 힙하고 키치하게](docs/showcase/SC27B.webp) | ![킷 컴파일 — T3 의도 왜곡](docs/showcase/SC27.webp) |
+| ![스킬 없이 — 야시장 포스터, 힙하고 키치하게](docs/showcase/SC27B.webp) | ![킷 컴파일 — T3 의도 왜곡](docs/showcase/SC27.webp) |
 
 <details>
 <summary>컴파일 프롬프트 전문</summary>
 
 ```
-키치 네온 타이포그래피 포스터 — 의도적으로 왜곡된 한글 레터링이 주인공.
-Scene: 순흑에 가까운 밤 필드 중앙에 대형 한글 레터링 '야시장' — deliberately distorted lettering: each glyph sliced horizontally at its waist, the upper half shifted sideways like a mis-registered screen print, strokes stretched tall and slightly wobbling as if seen through hot night air, distortion stopping just before legibility breaks. 글자 주변에 네온 사인의 옅은 글로우와 작은 전구 점들이 흩어진 야시장 무드.
-Camera: 정면 평면 포스터 구성, 레터링이 프레임 70%를 차지.
-Lighting: 네온 글로우가 글자 획에서 배어나오는 self-lit lettering, 배경은 딥 섀도.
-Color grading: hot pink neon #F25C9B, electric mint offset layer #5EEAD4, warm bulb amber #F2B705, near-black night field #0B0D12.
-Texture/Medium: 네온 튜브의 유리 광택과 미세한 헤이즈, 스크린프린트 오프셋의 어긋난 잉크 레이어.
-Text-in-image: headline "야시장" 중앙(초대형 절단·오프셋 한글 레터링, 핑크+민트 이중 레이어).
+한국 야시장 포스터 — 힙하고 키치한 네온 나이트마켓.
+Scene: 순흑 밤하늘 아래 야시장 골목 입구, 스트링 전구와 네온 간판이 겹겹이 빛나고, 김이 오르는 포장마차 실루엣들이 하단 1/3을 채우는 구성. 중앙 상단에 초대형 한글 헤드라인 '야시장' — deliberately distorted lettering: each glyph sliced horizontally at its waist, the upper half shifted sideways like a mis-registered screen print, distortion stopping just before legibility breaks. 하단 캡션 밴드.
+Camera: 정면 포스터 구성, 헤드라인이 상단 1/3을 지배, 풀블리드.
+Lighting: 네온 글로우가 글자에서 배어나오는 self-lit lettering, 전구 보케, 배경은 딥 섀도.
+Color grading: hot pink neon #F25C9B, electric mint #5EEAD4, warm bulb amber #F2B705, near-black #0B0D12.
+Texture/Medium: 네온 유리 광택과 옅은 헤이즈, 스크린프린트 오프셋의 어긋난 잉크 레이어.
+Text-in-image: headline "야시장" 상단 중앙(초대형 절단·오프셋 한글 레터링, 핑크+민트 이중 레이어), caption "매주 금·토 밤" 하단 중앙(라운드 산세리프, 앰버).
 All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
 AR 4:5
 ```
