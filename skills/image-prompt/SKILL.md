@@ -1,7 +1,7 @@
 ---
 name: image-prompt
-version: "2.1.0"
-description: 막연한 요청을 gpt-image-2(Codex `$imagegen`) 완성 프롬프트로 컴파일하는 스킬. 검증된 규칙 — 티어드 네거티브(기본 전부 긍정형+극소수 화이트리스트 2종), 앞 브래킷 금지·끝 AR 토큰만, 장비는 결과로 환원, HEX 명시, 1행=1컷, 사이즈락 6종, C1~C12 플레이북, 화보 Format B(플랫 콤마형), 시네마틱 키아트(C11), 프레젠테이션/슬라이드 덱(C12), 룩 프리셋 8종, 타이포/글자배치(영역·롤라벨·그리드), jsonl 스키마, 검증 스크립트. 트리거 — "공냥 프롬프트", "공냥 프롬프트 킷", "이미지 스킬", "공냥이미지스킬", "gn-image", "gpt-image-2 프롬프트", "이미지 프롬프트 써줘", "화보 프롬프트", "키아트", "글자 배치", "타이포 지정", "프롬프트 라이브러리", "포스터/카드뉴스/제품도감/만화 프롬프트", "프레젠테이션/슬라이드/피피티 이미지", "발표자료 덱", "프롬프트 jsonl 만들어", "프롬프트 컴파일". 후속 — "이 컷만 변형", "스타일 바꿔", "룩 바꿔", "사이즈 맞춰", "한글 카피 넣어" 도 이 스킬. ※ 실제 대량 생성·스폰은 [codex-imagegen]. 이 스킬은 "프롬프트를 어떻게 쓰느냐".
+version: "2.2.0"
+description: 막연한 요청을 gpt-image-2(Codex `$imagegen`) 완성 프롬프트로 컴파일하는 스킬. 검증된 규칙 — 티어드 네거티브(기본 전부 긍정형+극소수 화이트리스트 2종), 앞 브래킷 금지·끝 AR 토큰만, 장비는 결과로 환원, HEX 명시, 1행=1컷, 사이즈락 6종, C1~C12 플레이북, 화보 Format B(플랫 콤마형), 시네마틱 키아트(C11), 프레젠테이션/슬라이드 덱(C12), 룩 프리셋 8종, 컨셉 변수 축(미학 사조 M1~M10·몸 반응 번역·모순쌍 레이어 분리·타이포 아트 T1~T4·컬러 번역), 타이포/글자배치(영역·롤라벨·그리드), jsonl 스키마, 검증 스크립트. 트리거 — "공냥 프롬프트", "공냥 프롬프트 킷", "이미지 스킬", "공냥이미지스킬", "gn-image", "gpt-image-2 프롬프트", "이미지 프롬프트 써줘", "화보 프롬프트", "키아트", "글자 배치", "타이포 지정", "프롬프트 라이브러리", "포스터/카드뉴스/제품도감/만화 프롬프트", "프레젠테이션/슬라이드/피피티 이미지", "발표자료 덱", "프롬프트 jsonl 만들어", "프롬프트 컴파일", "시안 여러 개", "양산 컨셉", "차별화 컨셉", "컨셉부터 잡아줘". 후속 — "이 컷만 변형", "스타일 바꿔", "룩 바꿔", "사조 바꿔", "다른 사조로", "무드만 바꿔", "사이즈 맞춰", "한글 카피 넣어" 도 이 스킬. ※ 실제 대량 생성·스폰은 [codex-imagegen]. 이 스킬은 "프롬프트를 어떻게 쓰느냐".
 ---
 
 # 🐾 공냥 프롬프트 킷 VOL.2 — gpt-image-2 프롬프트 컴파일러
@@ -11,7 +11,7 @@ description: 막연한 요청을 gpt-image-2(Codex `$imagegen`) 완성 프롬프
 ## 워크플로우
 
 1. 거친 요청에서 빠진 결정(카테고리·컷타입·피사체·스타일·구도·텍스트·AR)을 **추론해 채운다**. 취향 디테일은 묻지 말고 결정. **묻는 건** 정확한 한글 문구·브랜드명·민감 소재 정도.
-2. 카테고리/컷타입이 잡히면 `references/category-patterns.md`(C1~C12)를 본다. 포맷 라우팅(아래 §포맷 A/포맷 B)으로 A/B를 정한다. 무드 요청("있어보이게"·"럭셔리하게"·"영화처럼")은 `references/look-presets.md`에서 프리셋 1개를 골라 드롭인.
+2. 카테고리/컷타입이 잡히면 `references/category-patterns.md`(C1~C12)를 본다. 포맷 라우팅(아래 §포맷 A/포맷 B)으로 A/B를 정한다. 무드 요청("있어보이게"·"럭셔리하게"·"영화처럼")은 `references/look-presets.md`에서 프리셋 1개를 골라 드롭인. 시안 다변화·양산 컨셉·"차별화되게"·"컨셉부터" 요청은 `references/concept-axes.md`의 변수 축(사조 M·몸 반응 R·모순쌍 X·타이포 아트 T·컬러 번역)에서 축 1개를 골라 변주.
 3. 아래 **철칙**을 지켜 작성, 끝에 `AR` 토큰.
 4. 고가치 산출물은 응답 전 `node scripts/check_prompt.mjs <file>`로 검증(`ok:true` 확인).
 5. 생성으로 이어지면 **컴파일된 프롬프트만** 넘긴다(거친 원문은 안 넘김).
@@ -41,7 +41,7 @@ description: 막연한 요청을 gpt-image-2(Codex `$imagegen`) 완성 프롬프
    | 정책 안전 단언(화보) | **Tier-2** 페어 |
 
    `Negative:` 라벨 섹션은 **전 티어 금지**(`E-NEG-SECTION`).
-3. **SD-era 폐기 어휘 금지.** `masterpiece/best quality/8k/4k/uhd/trending on artstation/ultra-detailed/highly detailed/sharp focus`. 가중치 `(word:1.3)`, 슬래시 플래그 `--ar/--v`, 본문 `§`, 빈 형용사 `멋지게/감성적으로/고급스럽게/beautiful/stunning`.
+3. **SD-era 폐기 어휘 금지.** `masterpiece/best quality/8k/4k/uhd/trending on artstation/ultra-detailed/highly detailed/sharp focus`. 가중치 `(word:1.3)`, 슬래시 플래그 `--ar/--v`, 본문 `§`, 빈 형용사 `멋지게/감성적으로/고급스럽게/세련되게/beautiful/stunning`. **무대 지정도 동급 노이즈** — "어워드 수준으로/전문가처럼/최고급"은 기준이 프롬프트 밖에 있어 평균값만 나온다. 수치(여백 %·컬러 60/30/10·위계 단수)·몸 반응·구체 예시로 환원(→ `references/concept-axes.md` §죽은 단어 환원).
 4. **장비 스펙은 노이즈 → 결과로 환원.** 카메라 EXIF·조명 장비명 대신 결과: "shallow DoF, background falls off softly", "long soft-edged shadows", "warm key + cool rim". (패션의 `Lens character:`·`Director signature:` 라인은 '결과+레퍼런스 앵커'라 예외.)
 5. **수치 명세는 박는다.** HEX 팔레트(컷당 3~5색), 켈빈, `key:fill 1:2` 비율 → 품질↑.
 6. **1행 = 1컷 = 1 호출.** 한 캔버스 그리드/매트릭스 금지. 여러 컷은 N개 별도 행.
@@ -124,6 +124,7 @@ API는 커스텀이지만 **codex(`$imagegen`) 경로는 6종만** 안전. `auto
 
 - **`references/category-patterns.md`** — C1~C12 컷타입·기본 AR·필수 디테일·공통 DNA·만화 A/B·덱 DNA.
 - **`references/look-presets.md`** — 프리미엄 룩 프리셋 8종(럭셔리·시네마틱·미니멀 프로덕트·스위스 타이포·다크 테크·레트로 인쇄·파스텔·골드 포일) 드롭인 블록.
+- **`references/concept-axes.md`** — 컨셉 변수 축: 미학 사조 10종(M1~M10 조형언어 분해)·몸 반응 번역 8종(R축)·모순쌍 레이어 분리(X축)·컬러 번역(음악·장면→팔레트)·타이포 아트 4기법(T1~T4)·컨셉 프리플라이트·양산 스윕 패턴.
 - **`references/jsonl-and-examples.md`** — jsonl 스키마(format/tier/lane)·모델 팩트·완성 예제·codex 골격·8섹션 변형.
 - **`references/typography-layout.md`** — 영역 문법·롤 라벨·폰트 어휘·정확 문자열·그리드.
 - **`references/editorial-hwabo.md`** — 화보 Format B·슬롯 12종·Tier-2 문구(로컬 상세판 있으면 우선).

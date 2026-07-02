@@ -128,7 +128,7 @@ function validateText(raw, opts = {}, rec = null) {
   if (has(/\([^()]*:\s*[01]?\.\d+\s*\)/)) err(errors, "E-WEIGHT", "가중치 문법 `(word:1.3)` 금지.");
   if (has(/--(ar|v|no|style|niji)\b/)) err(errors, "E-MJ-FLAG", "Midjourney식 슬래시 플래그(`--ar/--v/--no`) 금지.");
   if (has(/(^|\n)\s*§|§\s*\d/)) err(warnings, "W-SECTION-MARK", "본문에 `§` 기호 사용 — 헤더 `# 1.` 형식만 허용.");
-  const filler = p.match(/(멋지게|감성적으로|고급스럽게|예쁘게|beautifully|stunning|atmospheric|perfect|professional)\b/gi);
+  const filler = p.match(/(어워드 수준|전문가처럼|(?:멋지게|감성적으로|고급스럽게|예쁘게|세련되게|감도있게|world-class|beautifully|stunning|atmospheric|perfect|professional)(?![\p{L}\p{N}_]))/giu);
   if (filler) err(warnings, "W-FILLER", `빈 형용사(구체 명세로 대체): ${[...new Set(filler.map((s) => s.toLowerCase()))].join(", ")}.`);
 
   if (tier === 2) { // 화보 실패 토큰
