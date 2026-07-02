@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """docs/showcase/*.webp — 쇼케이스 갤러리 베이커.
-생성 원본 PNG에 '거친 입력 한마디' 칩(좌하단)과 카테고리 배지(우하단)를 구워
-최대 1024px webp로 저장한다. 사용: python3 docs/make_showcase.py <원본PNG디렉토리>
+생성 원본 PNG에 카테고리 배지(우하단)만 구워 최대 1024px webp로 저장한다.
+사용: python3 docs/make_showcase.py <원본PNG디렉토리>
 """
 import json, sys
 from pathlib import Path
@@ -39,8 +39,6 @@ for e in json.load(open(HERE / "showcase" / "manifest.json")):
     f_chip  = ImageFont.truetype(MALB, fs)
     f_badge = ImageFont.truetype(MAL, int(fs*0.78))
     margin = int(im.width * 0.035)
-    ch = fs + int(f_chip.size*0.38)*2
-    chip(d, (margin, im.height - margin - ch), f"“{e['rough']}”", f_chip, MINT)
     bh = int(fs*0.78) + int(f_badge.size*0.38)*2
     chip(d, (im.width - margin, im.height - margin - bh), e["badge"], f_badge, GOLD, anchor_right=True)
     im = Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")

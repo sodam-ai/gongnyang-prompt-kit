@@ -128,15 +128,278 @@
 
 <section id="gallery"><div class="wrap">
   <h2>생성 예시 — 프롬프트가 이렇게 바뀝니다 🐾</h2>
-  <p class="lead">같은 gpt-image-2다. <b>왼쪽은 사람이 친 한 줄을 그대로 넣은 결과, 오른쪽은 그 한 줄을 킷이 컴파일해서 넣은 결과</b> — 차이는 프롬프트뿐이다. 각 이미지 하단 칩에 실제 입력이 그대로 적혀 있다. 전체 레코드는 <code>examples/showcase.jsonl</code>.</p>
+  <p class="lead">같은 gpt-image-2다. <b>왼쪽은 사람이 친 한 줄을 그대로 넣은 결과, 오른쪽은 그 한 줄을 킷이 컴파일해서 넣은 결과</b> — 차이는 프롬프트뿐이다. 전체 레코드는 <code>examples/showcase.jsonl</code>.</p>
+  <h3 class="vs-title"><code>개쩌는 이미지 하나 만들어줘</code> → C11 시네마틱 키아트</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC32B.webp" alt="스킬 없이 — 개쩌는 이미지 하나 만들어줘" loading="lazy" />
+    <img src="showcase/SC32.webp" alt="킷 컴파일 — C11 시네마틱 키아트" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>시네마틱 키아트 — 새벽 구름바다 위로 도약하는 거대 고래.
+Scene: 해 뜨기 직전의 구름 바다, 그 위로 거대한 혹등고래 한 마리가 구름 물보라를 흩뿌리며 도약하는 순간, 아래 절벽 끝에 작은 관측자 실루엣 한 명, 상단 하늘 밴드는 비워둔 클린 영역.
+Camera: 초광각 vista, 로우 앵글, 인물 대비 압도적 스케일 대비, deep aerial perspective.
+Lighting: 지평선의 골드 백라이트가 고래의 림을 태우고, 구름 틈으로 volumetric 광선이 쏟아진다.
+Color grading: 새벽 인디고 #1B2440, 골드 #E8B168, 페일 로즈 #E8C4C4.
+Texture/Medium: cinematic grain, 옅은 안개 드리프트.
+AR 16:9</pre>
+  </details>
+  <h3 class="vs-title"><code>화보 한 장</code> → C1 화보</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC01B.webp" alt="스킬 없이 — 화보 한 장" loading="lazy" />
+    <img src="showcase/SC01.webp" alt="킷 컴파일 — C1 화보" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>한국 여성 모델의 룩북 전신 컷, 상업 패션 카탈로그 완성도.
+Scene: 미색 스튜디오 배경 앞에 선 20대 한국 여성 모델, 오버사이즈 울 코트에 니트 셋업, 자연스러운 워킹 포즈, 프레임 안엔 인물 한 명 단독.
+Camera: 전신 세로 구도, 눈높이, shallow DoF, background falls off softly.
+Lighting: 큰 소프트박스 정면광과 옅은 림, long soft-edged shadows.
+Color grading: 웜 아이보리 #F7F4EC, 카멜 #C19A6B, 잉크 #1C1A17.
+Texture/Medium: natural skin texture, visible pores, subtle film grain, 울 원단의 결.
+AR 2:3</pre>
+  </details>
+  <h3 class="vs-title"><code>립밤 광고컷</code> → C2 뷰티</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC02B.webp" alt="스킬 없이 — 립밤 광고컷" loading="lazy" />
+    <img src="showcase/SC02.webp" alt="킷 컴파일 — C2 뷰티" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>립밤 제품 히어로 매크로, 상업 뷰티 광고 완성도.
+Scene: 젖은 유리 표면 위에 세워진 민트색 립밤 스틱 하나, 주위로 튀어오른 물방울과 얇은 물결, 제품 표면에 맺힌 이슬.
+Camera: 매크로 근접, 제품 정중앙, 배경은 부드럽게 흐려진다.
+Lighting: 클린 스튜디오광, 하이라이트는 하얗게 날아가지 않게, 투명한 젖은 반사.
+Color grading: 민트 #BFE8DE, 화이트 #FAFAFA, 딥그린 #1E4D40.
+Texture/Medium: 물방울 매크로 물리, 유리 반사, 미세 그레인.
+AR 1:1</pre>
+  </details>
+  <h3 class="vs-title"><code>재즈바 포스터</code> → C3 한글 포스터</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC03B.webp" alt="스킬 없이 — 재즈바 포스터" loading="lazy" />
+    <img src="showcase/SC03.webp" alt="킷 컴파일 — C3 한글 포스터" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>한국어 재즈바 포스터, 상업 인쇄 완성도.
+Scene: 상단 1/3 타이틀 밴드, 중앙에 콘트라베이스 연주자의 딥블루 실루엣 일러스트와 담배연기 같은 얇은 곡선, 하단 캡션 밴드. 정돈된 매거진 여백.
+Camera: 정면 평면 구성, 중앙 정렬, 풀블리드.
+Lighting: 무대 스포트라이트 하나가 실루엣 뒤에서 번지는 글로우.
+Color grading: 미드나잇 #101A2E, 크림 #F3EEE2, 브라스 골드 #C9A24B.
+Texture/Medium: 매트 아트지, 미세 그레인, 인쇄 톤.
+Text-in-image: headline "밤과 재즈" 상단 중앙(굵은 세리프, 크림), caption "매주 금·토" 하단 중앙(콘덴스드 산세리프, 골드).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
+  </details>
+  <h3 class="vs-title"><code>이어폰 도감</code> → C4 제품 도감</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC04B.webp" alt="스킬 없이 — 이어폰 도감" loading="lazy" />
+    <img src="showcase/SC04.webp" alt="킷 컴파일 — C4 제품 도감" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>무선 이어폰 분해 도감 컷, 산업 디자인 도록 완성도.
+Scene: 딥네이비 무대 중앙에 이어폰 한 쪽이 수직으로 분해되어 떠 있는 exploded view — 하우징, 드라이버 유닛, 기판, 배터리가 층층이 정렬. 각 부품에서 헤어라인 리더선이 뻗어 작은 플로팅 라벨 박스로 이어진다.
+Camera: 정면 아이소메트릭 느낌의 평면 구성, 중앙 정렬.
+Lighting: 부드러운 톱라이트, 부품 금속면에 절제된 스펙큘러.
+Color grading: 딥네이비 #0F1D30, 실버 #C9CDD4, 민트 라인 #5EEAD4.
+Texture/Medium: 양극산화 금속·수지 재질 매크로, 클린 벡터 라벨.
+Text-in-image: callout "드라이버" 좌중 라벨 박스, callout "배터리" 우중 라벨 박스.
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 3:4</pre>
+  </details>
+  <h3 class="vs-title"><code>향수 캠페인</code> → C5 캠페인</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC05B.webp" alt="스킬 없이 — 향수 캠페인" loading="lazy" />
+    <img src="showcase/SC05.webp" alt="킷 컴파일 — C5 캠페인" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>향수 런칭 캠페인 포스터, 하이엔드 코스메틱 광고 완성도.
+Scene: 아침 안개 낀 은방울꽃 수풀 사이에 반쯤 잠긴 유리 향수 보틀 하나, 보틀 위로 맺힌 이슬, 상단은 타이틀용 여백.
+Camera: 로우앵글 근접, 보틀 중앙, 배경 수풀은 부드럽게 흐려진다.
+Lighting: 새벽 백라이트가 보틀 유리를 투과하는 글로우, 옅은 안개 산란.
+Color grading: 포그 그린 #DCE8DC, 크리스탈 #F6F8F6, 딥 포레스트 #24402E.
+Texture/Medium: 유리 굴절, 이슬 매크로, 미세 필름 그레인.
+Text-in-image: headline "MUGUET" 상단 중앙(elegant thin serif, wide letter-spacing, 딥 포레스트).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
+  </details>
+  <h3 class="vs-title"><code>커피 인포그래픽</code> → C6 인포그래픽</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC06B.webp" alt="스킬 없이 — 커피 인포그래픽" loading="lazy" />
+    <img src="showcase/SC06.webp" alt="킷 컴파일 — C6 인포그래픽" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>핸드드립 커피 4단계 인포그래픽, 에디토리얼 다이어그램 완성도.
+Scene: 크림 캔버스에 세로 플로우 — 라운드 카드 4개가 위에서 아래로 이어지고 카드 사이는 가는 화살표. 각 카드 안에 플랫 일러스트(원두, 그라인더, 드리퍼, 잔). 상단 타이틀 밴드.
+Camera: 정면 평면, 중앙 정렬, 풀블리드.
+Lighting: 균등광, 옅은 카드 그림자.
+Color grading: 크림 #F5EFE6, 로스트 브라운 #6B4A32, 테라코타 #C2714F.
+Texture/Medium: 매트 벡터 평면, 종이 질감.
+Text-in-image: headline "한 잔의 순서" 상단 밴드 중앙(굵은 산세리프), 카드 라벨 위에서 아래로 "원두", "분쇄", "추출", "한 잔" 각 카드 하단(중간 굵기 산세리프).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 2:3</pre>
+  </details>
+  <h3 class="vs-title"><code>절약 카드뉴스</code> → C7 카드뉴스</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC07B.webp" alt="스킬 없이 — 절약 카드뉴스" loading="lazy" />
+    <img src="showcase/SC07.webp" alt="킷 컴파일 — C7 카드뉴스" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>SNS 카드뉴스 커버, 핀테크 에디토리얼 완성도.
+Scene: 소프트 옐로 평면 위에 커다란 동전 저금통 플랫 일러스트, 동전 하나가 떨어지는 순간, 좌상단에 타이틀 블록, 우하단에 페이지 인디케이터 점 3개. 읽기 여백이 넉넉한 매거진 레이아웃.
+Camera: 정면 평면, 풀블리드.
+Lighting: 균등광, 일러스트에 옅은 오프셋 그림자.
+Color grading: 소프트 옐로 #FFE9A8, 잉크 #1F2430, 코럴 #F2695C.
+Texture/Medium: 매트 벡터 평면, 종이 톤.
+Text-in-image: headline "하루 만 원 룰" 좌상단(굵은 산세리프, 잉크), subhead "한 달 30만 원" 그 아래 절반 크기(코럴).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 1:1</pre>
+  </details>
+  <h3 class="vs-title"><code>그래놀라 패키지</code> → C8 브랜딩</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC08B.webp" alt="스킬 없이 — 그래놀라 패키지" loading="lazy" />
+    <img src="showcase/SC08.webp" alt="킷 컴파일 — C8 브랜딩" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>그래놀라 브랜드 패키지 목업, 상업 제품 사진 완성도.
+Scene: 밝은 오크 테이블 위 크라프트 파우치 패키지 하나, 주위에 흩어진 귀리와 견과 약간, 뒤로 아침 창가 흐림. 파우치 전면엔 심플한 산 모양 라인 로고와 라벨 영역.
+Camera: 정면 45도, 제품 중앙, shallow DoF.
+Lighting: 아침 창가 자연광, 부드러운 사이드 섀도.
+Color grading: 크라프트 #C8A878, 크림 #F5EFE2, 딥그린 #2E4636.
+Texture/Medium: 크라프트지 재질, 무광 인쇄 마감, 곡물 매크로.
+Text-in-image: headline "산아침" 파우치 라벨 중앙(붓 느낌 한글 로고타입, 딥그린).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 1:1</pre>
+  </details>
+  <h3 class="vs-title"><code>로켓 3D 아이콘</code> → C9 3D 아이콘</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC09B.webp" alt="스킬 없이 — 로켓 3D 아이콘" loading="lazy" />
+    <img src="showcase/SC09.webp" alt="킷 컴파일 — C9 3D 아이콘" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>로켓 3D 앱 아이콘, 클레이 렌더 완성도.
+Scene: 파스텔 그라데이션 배경 중앙에 통통한 클레이 질감 로켓 하나, 둥근 창과 미니 화염, 살짝 기울어 떠 있는 포즈. 글자 없는 단일 오브젝트 클린 구성.
+Camera: 정면 3/4, 오브젝트 중앙.
+Lighting: 소프트 스튜디오 3점광, 부드러운 접지 그림자.
+Color grading: 파스텔 스카이 #CDE4F5, 코럴 #F58A7A, 크림 #FFF5EA.
+Texture/Medium: 매트 클레이 표면, 부드러운 베벨, 미세 SSS 느낌.
+AR 1:1</pre>
+  </details>
+  <h3 class="vs-title"><code>고양이 4컷 만화</code> → C10 만화</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC10B.webp" alt="스킬 없이 — 고양이 4컷 만화" loading="lazy" />
+    <img src="showcase/SC10.webp" alt="킷 컴파일 — C10 만화" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>고양이 일상 4컷 만화 한 페이지, 출판 퀄리티.
+Scene: 2x2 grid of four panels, equal gutters, 읽기 방향 좌상→우상→좌하→우하. Panel 1: establishing shot, 식탁 밑에서 눈만 내민 검은 고양이. Panel 2: close-up, 간식 봉지를 바라보는 반짝이는 눈, 말풍선 "간식?". Panel 3: 집사의 단호한 손가락, 말풍선 "안돼". Panel 4: reaction shot, 바닥에 녹아내린 고양이, 과장된 절망 이펙트 선.
+Camera: 컷마다 앵글 변화, 클린 칸 구성.
+Lighting: 플랫 셀 셰이딩, 옅은 스크린톤 그림자.
+Color grading: 웜 화이트 #FFF8EE, 잉크 #26221E, 머스터드 #E8B54D.
+Texture/Medium: 깔끔한 잉킹 선화, soft cel shading, 스크린톤.
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 1:1</pre>
+  </details>
+  <h3 class="vs-title"><code>SF 키아트</code> → C11 키아트</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC11B.webp" alt="스킬 없이 — SF 키아트" loading="lazy" />
+    <img src="showcase/SC11.webp" alt="킷 컴파일 — C11 키아트" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>Cinematic science-fiction key art.
+Scene: a lone explorer in a weathered vac-suit stands on a ridge of black glass dunes, facing a colossal ringed gas giant rising over the horizon; twin moons hang in the upper sky band left empty for a future title; the bottom eighth stays a clean dark band.
+Camera: ultra-wide vista, tiny human figure against vast scale, deep aerial perspective.
+Lighting: cold planet-light rim on the dunes, warm suit visor glow as the only warm note, long soft shadows.
+Color grading: void indigo #101528, glacial teal #6FB5AE, ember amber #D98A4B.
+Texture/Medium: cinematic grain, faint dust haze drifting across the ridge.
+AR 16:9</pre>
+  </details>
+  <h3 class="vs-title"><code>럭셔리 시계</code> → L1 럭셔리 에디토리얼</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC13B.webp" alt="스킬 없이 — 럭셔리 시계" loading="lazy" />
+    <img src="showcase/SC13.webp" alt="킷 컴파일 — L1 럭셔리 에디토리얼" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>수동 크로노그래프 손목시계 에디토리얼 컷, 하이엔드 매거진 완성도.
+Scene: 회색 석회암 판 위에 놓인 시계 하나, generous negative space dominating the frame, subject occupying under one third, 곁에 마른 유칼립투스 가지 하나.
+Camera: 탑다운에서 살짝 기운 앵글, shallow DoF.
+Lighting: soft directional daylight with long gentle shadows, 케이스 금속에 절제된 하이라이트.
+Color grading: muted ivory field #F5F1E8, ink #1C1A17, taupe accent #8C7B6B.
+Texture/Medium: matte uncoated paper grain, 석재 결, 사파이어 글라스 반사.
+AR 4:5</pre>
+  </details>
+  <h3 class="vs-title"><code>미니멀 텀블러</code> → L3 미니멀 프로덕트</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC15B.webp" alt="스킬 없이 — 미니멀 텀블러" loading="lazy" />
+    <img src="showcase/SC15.webp" alt="킷 컴파일 — L3 미니멀 프로덕트" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>스테인리스 텀블러 제품 히어로.
+Scene: product hero on a seamless white stage #FAFAFA, perfectly clean single-subject composition, 세이지 그린 무광 텀블러 하나가 정중앙에 수직으로.
+Camera: 정면 눈높이, 제품이 프레임 하단 2/3를 차지.
+Lighting: soft top-light with one crisp contact shadow anchoring the object, polished surface reflections kept subtle.
+Color grading: 화이트 #FAFAFA, 세이지 #9DB4A0, 잉크 #111111.
+Texture/Medium: true-to-material 무광 파우더코팅 질감, 매끈한 금속 림.
+AR 1:1</pre>
+  </details>
+  <h3 class="vs-title"><code>대시보드 히어로</code> → L5 다크 테크</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC17B.webp" alt="스킬 없이 — 대시보드 히어로" loading="lazy" />
+    <img src="showcase/SC17.webp" alt="킷 컴파일 — L5 다크 테크" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>SaaS 대시보드 히어로 그래픽.
+Scene: near-black canvas #0B0D12, hairline borders instead of shadows, 중앙에 살짝 기울어 떠 있는 대시보드 UI 카드 3장 — 추상 막대·블록·스파크라인 도형으로만 구성, one restrained mint glow accent #5EEAD4 이 메인 차트 라인을 따라 흐른다. dark technical premium mood, crisp UI-card surfaces floating with subtle depth.
+Camera: 정면에서 살짝 부감, 카드 중앙 정렬.
+Lighting: 민트 글로우 발광과 카드 에지의 헤어라인 하이라이트.
+Color grading: 니어블랙 #0B0D12, 민트 #5EEAD4, 딤 그레이 #8B93A7.
+Texture/Medium: 매트 다크 평면, 유리 느낌 카드 표면, 미세 그레인.
+AR 16:9</pre>
+  </details>
+  <h3 class="vs-title"><code>연말 초대장</code> → L8 골드 포일</h3>
+  <div class="vs-grid">
+    <img src="showcase/SC20B.webp" alt="스킬 없이 — 연말 초대장" loading="lazy" />
+    <img src="showcase/SC20.webp" alt="킷 컴파일 — L8 골드 포일" loading="lazy" />
+  </div>
+  <details class="prompt-rev">
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>연말 갈라 초대장, 레터프레스 인쇄 완성도.
+Scene: deep navy field #101A2E, embossed gold-foil motifs #C9A24B catching a soft raking light — 중앙 상단에 월계수 리스와 별 모티프, 중앙에 타이틀 영역, 하단에 가는 골드 라인 오너먼트, letterpress paper texture with debossed line ornaments.
+Camera: 정면 탑다운 평면, 중앙 대칭.
+Lighting: 사선 raking light가 금박 엠보스를 따라 반짝임.
+Color grading: 딥 네이비 #101A2E, 골드 포일 #C9A24B, 크림 #F3EEE2.
+Texture/Medium: 코튼지 레터프레스 눌림, 금박 스펙큘러, ceremonial premium finish.
+Text-in-image: headline "초대합니다" 중앙(elegant thin serif 느낌의 한글 명조, 크림), caption "12.31 7PM" 하단 중앙 소형(골드).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 2:3</pre>
+  </details>
   <h3 class="vs-title"><code>파도 타이포그래피 포스터</code> → T1 움직임 번역</h3>
   <div class="vs-grid">
     <img src="showcase/SC26B.webp" alt="스킬 없이 — 파도 타이포그래피 포스터" loading="lazy" />
     <img src="showcase/SC26.webp" alt="킷 컴파일 — T1 움직임 번역" loading="lazy" />
   </div>
   <details class="prompt-rev">
-    <summary>컴파일 프롬프트 전문</summary>
-    <pre>타이포그래피 아트 포스터 — 파도의 에너지를 실은 한글 레터링이 유일한 피사체. Scene: 옅은 포말빛 필드 전면을 거대한 한글 레터링 '파도'가 채우는 구성. letterforms carrying the surge of a breaking wave: thick brush strokes swelling and curling upward with momentum, stroke tips bursting into fine white spray droplets, the baseline rolling like a swell, deep-sea ink gradating to foam white inside each stroke — the lettering is the only subject in the frame, all of the wave's energy living inside the strokes. Camera: 정면 평면 포스터 구성, 레터링이 프레임의 80%를 차지하는 과감한 스케일. Lighting: 균일한 인쇄 광, 획 안쪽에만 깊이감 있는 톤 변화. Color grading: deep sea ink #1D4E89, midnight undertone #101A2E, foam white #F5F8FA, 시안 스프레이 포인트 #5EEAD4. Texture/Medium: 두꺼운 스크린프린트 잉크 질감, 획 가장자리의 미세한 물보라 입자. Text-in-image: headline "파도" 화면 중앙(초대형 브러시 한글 레터링, 딥블루). All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark. AR 4:5</pre>
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>타이포그래피 아트 포스터 — 파도의 에너지를 실은 한글 레터링이 유일한 피사체.
+Scene: 옅은 포말빛 필드 전면을 거대한 한글 레터링 '파도'가 채우는 구성. letterforms carrying the surge of a breaking wave: thick brush strokes swelling and curling upward with momentum, stroke tips bursting into fine white spray droplets, the baseline rolling like a swell, deep-sea ink gradating to foam white inside each stroke — the lettering is the only subject in the frame, all of the wave's energy living inside the strokes.
+Camera: 정면 평면 포스터 구성, 레터링이 프레임의 80%를 차지하는 과감한 스케일.
+Lighting: 균일한 인쇄 광, 획 안쪽에만 깊이감 있는 톤 변화.
+Color grading: deep sea ink #1D4E89, midnight undertone #101A2E, foam white #F5F8FA, 시안 스프레이 포인트 #5EEAD4.
+Texture/Medium: 두꺼운 스크린프린트 잉크 질감, 획 가장자리의 미세한 물보라 입자.
+Text-in-image: headline "파도" 화면 중앙(초대형 브러시 한글 레터링, 딥블루).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
   </details>
   <h3 class="vs-title"><code>야시장 타이포그래피 포스터, 힙하고 키치하게</code> → T3 의도 왜곡</h3>
   <div class="vs-grid">
@@ -144,8 +407,16 @@
     <img src="showcase/SC27.webp" alt="킷 컴파일 — T3 의도 왜곡" loading="lazy" />
   </div>
   <details class="prompt-rev">
-    <summary>컴파일 프롬프트 전문</summary>
-    <pre>키치 네온 타이포그래피 포스터 — 의도적으로 왜곡된 한글 레터링이 주인공. Scene: 순흑에 가까운 밤 필드 중앙에 대형 한글 레터링 '야시장' — deliberately distorted lettering: each glyph sliced horizontally at its waist, the upper half shifted sideways like a mis-registered screen print, strokes stretched tall and slightly wobbling as if seen through hot night air, distortion stopping just before legibility breaks. 글자 주변에 네온 사인의 옅은 글로우와 작은 전구 점들이 흩어진 야시장 무드. Camera: 정면 평면 포스터 구성, 레터링이 프레임 70%를 차지. Lighting: 네온 글로우가 글자 획에서 배어나오는 self-lit lettering, 배경은 딥 섀도. Color grading: hot pink neon #F25C9B, electric mint offset layer #5EEAD4, warm bulb amber #F2B705, near-black night field #0B0D12. Texture/Medium: 네온 튜브의 유리 광택과 미세한 헤이즈, 스크린프린트 오프셋의 어긋난 잉크 레이어. Text-in-image: headline "야시장" 중앙(초대형 절단·오프셋 한글 레터링, 핑크+민트 이중 레이어). All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark. AR 4:5</pre>
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>키치 네온 타이포그래피 포스터 — 의도적으로 왜곡된 한글 레터링이 주인공.
+Scene: 순흑에 가까운 밤 필드 중앙에 대형 한글 레터링 '야시장' — deliberately distorted lettering: each glyph sliced horizontally at its waist, the upper half shifted sideways like a mis-registered screen print, strokes stretched tall and slightly wobbling as if seen through hot night air, distortion stopping just before legibility breaks. 글자 주변에 네온 사인의 옅은 글로우와 작은 전구 점들이 흩어진 야시장 무드.
+Camera: 정면 평면 포스터 구성, 레터링이 프레임 70%를 차지.
+Lighting: 네온 글로우가 글자 획에서 배어나오는 self-lit lettering, 배경은 딥 섀도.
+Color grading: hot pink neon #F25C9B, electric mint offset layer #5EEAD4, warm bulb amber #F2B705, near-black night field #0B0D12.
+Texture/Medium: 네온 튜브의 유리 광택과 미세한 헤이즈, 스크린프린트 오프셋의 어긋난 잉크 레이어.
+Text-in-image: headline "야시장" 중앙(초대형 절단·오프셋 한글 레터링, 핑크+민트 이중 레이어).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
   </details>
   <h3 class="vs-title"><code>위스키 광고 포스터 고급스럽게</code> → M2 아르데코</h3>
   <div class="vs-grid">
@@ -153,8 +424,16 @@
     <img src="showcase/SC28.webp" alt="킷 컴파일 — M2 아르데코" loading="lazy" />
   </div>
   <details class="prompt-rev">
-    <summary>컴파일 프롬프트 전문</summary>
-    <pre>위스키 브랜드 포스터 — 아르데코 재해석, 하이엔드 주류 광고 완성도. Scene: 딥네이비 필드 중앙에 각진 크리스탈 디캔터와 온더록 글래스 하나, 그 뒤로 방사형 선셋버스트 골드 라인과 계단형 대칭 프레임이 수직으로 상승하는 구성, 상단 타이틀 밴드. Art Deco geometry — radiating sunburst lines, stepped symmetric frame, vertical emphasis, gilded linework over deep navy, polished lacquer finish. Camera: 정면 대칭 포스터 구성, 중앙 정렬, 풀블리드. Lighting: 앰버 백글로우가 디캔터 유리를 투과하는 절제된 스펙큘러, 금박 라인에 raking light. Color grading: deep navy #101A2E, gold #C9A24B, cream #F3EEE2, amber liquid #B36A2E. Texture/Medium: 래커 마감 인쇄 톤, 금박 라인의 미세한 반짝임, 파인 그레인. Text-in-image: headline "밤의 황금기" 상단 밴드 중앙(아르데코 기하 세리프, 골드), caption "조용히 깊어지는 12년" 하단 중앙(가는 산세리프, 크림). All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark. AR 4:5</pre>
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>위스키 브랜드 포스터 — 아르데코 재해석, 하이엔드 주류 광고 완성도.
+Scene: 딥네이비 새틴 필드 중앙에 각진 크리스탈 디캔터 단 하나, 그 뒤로 하단에서 솟아오르는 방사형 선셋버스트 골드 라인, 화면 가장자리는 가는 계단형 코너 오나먼트만 절제된 대칭으로. 상단 타이틀 밴드는 넉넉한 여백. Art Deco geometry — radiating sunburst lines, stepped corner ornaments, vertical emphasis, gilded linework over deep navy, polished lacquer finish.
+Camera: 정면 대칭 포스터 구성, 디캔터가 프레임 하단 2/3 중앙, 풀블리드.
+Lighting: 앰버 백글로우가 디캔터를 투과해 액체가 스스로 빛나는 느낌, 금박 라인엔 raking light.
+Color grading: deep navy #101A2E, gold #C9A24B, cream #F3EEE2, amber liquid #B36A2E.
+Texture/Medium: 래커 마감 인쇄 톤, 금박의 미세한 반짝임, 파인 그레인.
+Text-in-image: headline "밤의 황금기" 상단 밴드 중앙(아르데코 기하 세리프, 골드, 넓은 자간).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
   </details>
   <h3 class="vs-title"><code>록 페스티벌 포스터 멋지게</code> → M8 구성주의</h3>
   <div class="vs-grid">
@@ -162,8 +441,16 @@
     <img src="showcase/SC29.webp" alt="킷 컴파일 — M8 구성주의" loading="lazy" />
   </div>
   <details class="prompt-rev">
-    <summary>컴파일 프롬프트 전문</summary>
-    <pre>록 페스티벌 포스터 — 구성주의 재해석, 공연 인쇄물 완성도. Scene: 사선으로 화면을 가로지르는 적·흑 컬러 플레인, 그 교차점에 일렉 기타를 치켜든 연주자의 하이컨트라스트 포토몽타주 실루엣, 상단 대각 타이틀 밴드. constructivist poster dynamics — aggressive diagonal composition, angular planes slicing across the field, photomontage-style subject placement, kinetic propaganda energy. Camera: 정면 평면 포스터 구성, 대각 정렬, 풀블리드. Lighting: 플랫 인쇄 광, 실루엣 가장자리는 하드 컷. Color grading: vermilion red #B33A2B, ink black #111111, aged cream #E8DCC4. Texture/Medium: 거친 오프셋 인쇄 질감, 스텐실 에지, 종이 결. Text-in-image: headline "굉음" 상단 대각 밴드(초굵은 그로테스크 산세리프, 블랙), caption "6.21 한강 특설무대" 하단(콘덴스드 산세리프, 레드). All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark. AR 4:5</pre>
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>록 페스티벌 포스터 — 구성주의 재해석, 공연 인쇄물 완성도.
+Scene: 사선으로 화면을 가로지르는 적·흑 컬러 플레인, 그 교차점에 일렉 기타를 치켜든 연주자의 하이컨트라스트 포토몽타주 실루엣, 상단 대각 타이틀 밴드. constructivist poster dynamics — aggressive diagonal composition, angular planes slicing across the field, photomontage-style subject placement, kinetic propaganda energy.
+Camera: 정면 평면 포스터 구성, 대각 정렬, 풀블리드.
+Lighting: 플랫 인쇄 광, 실루엣 가장자리는 하드 컷.
+Color grading: vermilion red #B33A2B, ink black #111111, aged cream #E8DCC4.
+Texture/Medium: 거친 오프셋 인쇄 질감, 스텐실 에지, 종이 결.
+Text-in-image: headline "굉음" 상단 대각 밴드(초굵은 그로테스크 산세리프, 블랙), caption "6.21 한강 특설무대" 하단(콘덴스드 산세리프, 레드).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
   </details>
   <h3 class="vs-title"><code>향초 브랜드 포스터 예쁘게</code> → M7 아르누보</h3>
   <div class="vs-grid">
@@ -171,8 +458,16 @@
     <img src="showcase/SC30.webp" alt="킷 컴파일 — M7 아르누보" loading="lazy" />
   </div>
   <details class="prompt-rev">
-    <summary>컴파일 프롬프트 전문</summary>
-    <pre>핸드메이드 향초 브랜드 포스터 — 아르누보 재해석, 부티크 인쇄물 완성도. Scene: 아이보리 필드 중앙에 유리컵 소이 캔들 하나, 촛불 주위를 식물 줄기 곡선과 금박 라인 장식 프레임이 유기적으로 감싸는 구성, 상단 타이틀 여백. Art Nouveau linework — flowing botanical curves framing the subject, hand-drawn organic ornament, lithograph texture. Camera: 정면 대칭 포스터 구성, 캔들 중앙, 풀블리드. Lighting: 촛불의 웜 글로우가 프레임 안쪽을 은은히 밝히는 부드러운 명암. Color grading: sage #7A8C5F, ivory #F3EEE2, gilded gold #C9A24B, deep brown #4A3B2A. Texture/Medium: 리소그래프 인쇄 질감, 손그림 라인의 미세한 흔들림, 무광 종이. Text-in-image: headline "숨" 상단 중앙(아르누보 곡선 세리프, 딥브라운), caption "손으로 붓는 소이 캔들" 하단 중앙(가는 산세리프, 세이지). All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark. AR 4:5</pre>
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>핸드메이드 향초 브랜드 포스터 — 아르누보 재해석, 부티크 인쇄물 완성도.
+Scene: 아이보리 필드 중앙에 유리컵 소이 캔들 하나, 촛불 주위를 식물 줄기 곡선과 금박 라인 장식 프레임이 유기적으로 감싸는 구성, 상단 타이틀 여백. Art Nouveau linework — flowing botanical curves framing the subject, hand-drawn organic ornament, lithograph texture.
+Camera: 정면 대칭 포스터 구성, 캔들 중앙, 풀블리드.
+Lighting: 촛불의 웜 글로우가 프레임 안쪽을 은은히 밝히는 부드러운 명암.
+Color grading: sage #7A8C5F, ivory #F3EEE2, gilded gold #C9A24B, deep brown #4A3B2A.
+Texture/Medium: 리소그래프 인쇄 질감, 손그림 라인의 미세한 흔들림, 무광 종이.
+Text-in-image: headline "숨" 상단 중앙(아르누보 곡선 세리프, 딥브라운), caption "손으로 붓는 소이 캔들" 하단 중앙(가는 산세리프, 세이지).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
   </details>
   <h3 class="vs-title"><code>일렉트로닉 파티 포스터 힙하게</code> → M9 사이키델릭</h3>
   <div class="vs-grid">
@@ -180,8 +475,16 @@
     <img src="showcase/SC31.webp" alt="킷 컴파일 — M9 사이키델릭" loading="lazy" />
   </div>
   <details class="prompt-rev">
-    <summary>컴파일 프롬프트 전문</summary>
-    <pre>일렉트로닉 파티 포스터 — 70년대 사이키델릭 재해석, 공연 인쇄물 완성도. Scene: 소용돌이치는 동심원 물결이 화면 전체를 채우고, 그 리듬을 그대로 타고 흐르는 한글 레터링이 중앙에서 바깥으로 퍼지는 유동 구성. 70s psychedelic flow — melting liquid shapes and swirling rhythm, wavy concentric contours, vintage offset print grain. Camera: 정면 평면 포스터, 중앙 방사 구성, 풀블리드. Lighting: 플랫 인쇄 광, 고채도 색면 대비로 깊이를 만든다. Color grading: saturated clash of orange #E85D1F, purple #7B4EA3, green #3E8C4F, yellow #F2B705. Texture/Medium: 빈티지 오프셋 그레인, 살짝 어긋난 잉크 미스레지스트레이션. Text-in-image: headline "새벽" 중앙(물결치는 사이키델릭 한글 레터링, 오렌지), caption "자정부터 해 뜰 때까지" 하단(라운드 산세리프, 그린). All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark. AR 4:5</pre>
+    <summary>컴파일 프롬프트 전문 (복사해서 그대로 사용 가능)</summary>
+    <pre>일렉트로닉 파티 포스터 — 70년대 사이키델릭 재해석, 공연 인쇄물 완성도.
+Scene: 소용돌이치는 동심원 물결이 화면 전체를 채우고, 그 리듬을 그대로 타고 흐르는 한글 레터링이 중앙에서 바깥으로 퍼지는 유동 구성. 70s psychedelic flow — melting liquid shapes and swirling rhythm, wavy concentric contours, vintage offset print grain.
+Camera: 정면 평면 포스터, 중앙 방사 구성, 풀블리드.
+Lighting: 플랫 인쇄 광, 고채도 색면 대비로 깊이를 만든다.
+Color grading: saturated clash of orange #E85D1F, purple #7B4EA3, green #3E8C4F, yellow #F2B705.
+Texture/Medium: 빈티지 오프셋 그레인, 살짝 어긋난 잉크 미스레지스트레이션.
+Text-in-image: headline "새벽" 중앙(물결치는 사이키델릭 한글 레터링, 오렌지), caption "자정부터 해 뜰 때까지" 하단(라운드 산세리프, 그린).
+All text appears once, perfectly legible — no duplicate text, no extra words, no invented glyphs, no watermark.
+AR 4:5</pre>
   </details>
 </div></section>
 
