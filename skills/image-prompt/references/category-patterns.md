@@ -105,7 +105,7 @@
 - 필수: **타이틀 트리트먼트용 negative space 확보**(상단 밴드 또는 중앙 여백을 Scene에 명시) · **장르별 광 레시피** — 네온 사이버펑크(practical neon glow, teal&orange, wet reflective street) / 스릴러 저조도(low key, hard rim, deep shadow pools) / 판타지 골든(golden hour volumetric light, warm haze) · **billing-block 대비 하단 여백**(하단 1/8 클린 밴드)
 - 타이틀을 실제로 렌더할 땐 `typography-layout.md`의 롤 블록(headline/billing) 적용, Tier-1 결합 공식 1회
 - 캐릭터 원시트는 단독 인물+콘트라포스토+림 분리, 앙상블 몽타주는 크기 위계(주연 대형·조연 중형·배경 비스타)를 명시
-- **그림자 서사(`shadow_narrative`)** — 컨셉 훅형 제품 포스터. 가상 제품을 sharp·premium·중앙 지배적으로 두고, **하드 레이킹 키로 만든 긴 캐스트 그림자가 시네마틱 장면으로 변형**된다(제품의 숨은 이야기 — 필름카메라→연인이 걷는 밤거리, 카세트→춤추는 군중, 향수병→피어나는 꽃). 제품은 또렷·중앙, **그림자가 서사 전담**. Scene에 "제품이 지배적 + 그림자가 무엇으로 변하는지"를 명시, Lighting에 `single hard raking key carving one long clean shadow`. 3어절 한글 슬로건 1개 따옴표 고정(Tier-1 결합공식 1회). 실측(2026-07-06 홍대병 H엔진 14컷): 훅 최강·한글 슬로건 정확. `AR 1:1`(1024x1024) 또는 포스터 `2:3`.
+- **그림자 서사(`shadow_narrative`)** — 컨셉 훅형 제품 포스터. 가상 제품을 sharp·premium·중앙 지배적으로 두고, **하드 레이킹 키로 만든 긴 캐스트 그림자가 시네마틱 장면으로 변형**된다(제품의 숨은 이야기 — 필름카메라→연인이 걷는 밤거리, 카세트→춤추는 군중, 향수병→피어나는 꽃). 제품은 또렷·중앙, **그림자가 서사 전담**. Scene에 "제품이 지배적 + 그림자가 무엇으로 변하는지"를 명시, Lighting에 `single hard raking key carving one long clean shadow`. 3어절 한글 슬로건 1개 따옴표 고정(Tier-1 결합공식 1회). 훅이 가장 강한 계열이고 3어절 한글 슬로건까지 정확하게 렌더된다. `AR 1:1`(1024x1024) 또는 포스터 `2:3`.
 
 ## C12 프레젠테이션 / 슬라이드 덱
 - 컷타입: `cover_slide` `agenda_slide` `section_divider` `content_slide` `data_slide` `quote_slide` `closing_slide`
